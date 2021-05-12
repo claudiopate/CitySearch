@@ -12,7 +12,7 @@ if __name__ == '__main__':
     resource_dir = "/cron-job/resources"
     hash_file_csv = "/cron-job/hash_file.csv"
 
-    if os.path.exists() == False:
+    if os.path.exists(download_dir) == False:
         os.mkdir(download_dir)
 
     files_info = [
