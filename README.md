@@ -96,4 +96,15 @@ After the project is started:
 - Go to: http://localhost:3000
 - Type the city or the city code you want to search. You can also change the search mode from the dropdown list.
 
+### Exact Match search mode
+![alt text](https://github.com/claudiopate/CitySearch/blob/main/images/ExactSearch.png)
+
+### Start With search mode
+![alt text](https://github.com/claudiopate/CitySearch/blob/main/images/StartWith.png)
+
+### End With search mode
+![alt text](https://github.com/claudiopate/CitySearch/blob/main/images/EndWith.png)
+
+### Contain search mode
+![alt text](https://github.com/claudiopate/CitySearch/blob/main/images/Contain.png)
 
