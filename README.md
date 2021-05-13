@@ -88,3 +88,10 @@ cd <root of the project>
 docker-compose up
 
 ```
+
+### How to use
+
+After the project is started:
+- Open your browser
+- Go to: http://localhost:3000
+- Type the city you want to search
