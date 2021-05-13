@@ -77,8 +77,8 @@ Instead to perform the request to the server it was used the package *react-axio
 ## Run the project
 
 ### Requirements
-- Docker: version 20.10.5
-- Docker-Compose: version 1.29.0
+- Install Docker: version 20.10.5
+- Install Docker-Compose: version 1.29.0
 
 ### How to start
 
