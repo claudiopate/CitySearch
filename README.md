@@ -65,7 +65,7 @@ The script is containerized in a custom Docker image.
 The back-end part is a python script and expose a search api made with Flask. The server is listening at the port 5000, exposing the "/search/\<city-name\>" endopoint. This api will send a request to the elasticsearch db and retrieve data. 
 
 
-##Front-end
+## Front-end
 The front-end was developed in ReactJS, starting from the package *create-react-app* . For the graphic layout it was used the Material UI Framework and in particular the following components:
 - Text Field: where insert the city to search
 - Button: Run the search
@@ -74,3 +74,17 @@ The front-end was developed in ReactJS, starting from the package *create-react-
 
 Instead to perform the request to the server it was used the package *react-axios*
 
+## Run the project
+
+### Requirements
+- Docker: version 20.10.5
+- Docker-Compose: version 1.29.0
+
+### How to start
+
+```
+
+cd <root of the project>
+docker-compose up
+
+```
