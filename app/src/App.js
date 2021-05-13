@@ -10,14 +10,19 @@ function App() {
   const [queryValue, setQueryValue] = useState("default")
   const [searchValueMode, setSearchValueMode] = useState("exact")
 
+  var api_name = "search"
+  if (queryValue.match(/^\d/)) {
+    console.log(queryValue);
+    api_name = "search_by_code"
+  }
 
-  var url = "http://localhost:5000/search/" + queryValue
+  var url = "http://localhost:5000/" + api_name + "/" + queryValue
   if(searchValueMode === "startWith")
-    url = "http://localhost:5000/search/" + queryValue + "*"
+    url = "http://localhost:5000/" + api_name + "/" + queryValue + "*"
   else if(searchValueMode === "endWith")
-    url = "http://localhost:5000/search/*" + queryValue 
+    url = "http://localhost:5000/" + api_name + "/*" + queryValue 
   else if(searchValueMode === "contain")
-    url = "http://localhost:5000/search/*" + queryValue + "*"
+    url = "http://localhost:5000/" + api_name + "/*" + queryValue + "*"
   
   return (
     <div className="App">

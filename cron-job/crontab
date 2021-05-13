@@ -1,3 +1,2 @@
 #run python script every minutes
 * * * * * /usr/local/bin/python3 /cron-job/cron_job.py >> /var/log/cronlog.log 2>&1
-

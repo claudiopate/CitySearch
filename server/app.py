@@ -19,6 +19,11 @@ def search_by_city(city):
     cities = sd.search(city)
     return json.dumps(cities)
 
+@app.route('/search_by_code/<code>')
+def search_by_code(code):
+    cities = sd.search_by_code(code)
+    return json.dumps(cities)
+
 
 if __name__ == '__main__':
 
