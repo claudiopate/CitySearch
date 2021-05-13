@@ -94,4 +94,6 @@ docker-compose up
 After the project is started:
 - Open your browser
 - Go to: http://localhost:3000
-- Type the city you want to search
+- Type the city or the city code you want to search. You can also change the search mode from the dropdown list.
+
+
