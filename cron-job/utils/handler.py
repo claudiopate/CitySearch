@@ -44,7 +44,7 @@ def init_cities_files(file_info_list,resource_folder):
         write_cities_in_db(file_csv)
 
     #Create csv file with hash map value
-    hu.write_hash_value_map("hash_file.csv",hash_value_map)
+    hu.write_hash_value_map("/cron-job/hash_file.csv",hash_value_map)
 
     return hash_value_map
 
@@ -71,7 +71,7 @@ def update_cities_files(file_info_list,hash_value_map,resource_folder):
             hash_value_map[file_info["file_name"]] = hash_file_csv
 
     #update the hash value map file
-    hu.write_hash_value_map("hash_file.csv",hash_value_map)
+    hu.write_hash_value_map("/cron-job/hash_file.csv",hash_value_map)
     #Remove tmp folder and its content
     gu.remove_temp_folder("tmp")
     

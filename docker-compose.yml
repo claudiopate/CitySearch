@@ -9,8 +9,6 @@ services:
 
   cron-job:
     build: "cron-job/"
-    depends_on: 
-      - es01
   
   search-app:
     build: "app/"
