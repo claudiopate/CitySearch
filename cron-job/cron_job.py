@@ -23,8 +23,7 @@ if __name__ == '__main__':
         {
             "url_file" : "https://www.istat.it/storage/codici-unita-amministrative/Elenco-comuni-soppressi.zip",
             "dest_file_name": "deleted_cities"
-        }
-        
+        }      
     ]
 
     #Download files of cities

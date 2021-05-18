@@ -65,7 +65,13 @@ def update_cities_files(file_info_list,hash_value_map,resource_folder):
         #If the files are changed we have to update the DB
         if file_is_changed:
             write_cities_in_db(file_csv)
+            #Unzip the files
+            file_csv = mf.unzip_file_csv(file_info["file_path"], resource_folder)
+            #Update the hash value map
+            hash_value_map[file_info["file_name"]] = hash_file_csv
 
+    #update the hash value map file
+    hu.write_hash_value_map("hash_file.csv",hash_value_map)
     #Remove tmp folder and its content
     gu.remove_temp_folder("tmp")
     
